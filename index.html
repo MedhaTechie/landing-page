@@ -6,53 +6,94 @@
     <title>Tech Quiz Challenge 2025</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(120deg, #007bff, #00c6ff);
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            margin: 0;
+            padding: 0;
         }
+
         .container {
+            padding: 40px 20px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .card {
             background: rgba(255, 255, 255, 0.1);
             padding: 30px;
-            max-width: 700px;
-            margin: auto;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-            border-radius: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
         }
-        .btn {
-            background: #fff;
-            color: #007bff;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 8px;
-            display: inline-block;
-            margin-top: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            border: none;
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
-        .btn:hover {
-            background: #e2e2e2;
+
+        h2 {
+            font-size: 1.5em;
+            color: #ffff00;
+            margin-bottom: 20px;
         }
+
         .highlight {
             color: #ffff00;
             font-weight: bold;
         }
+
+        .btn {
+            background: #fff;
+            color: #007bff;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 25px;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #e2e2e2;
+        }
+
         footer {
             margin-top: 40px;
             font-size: 14px;
             opacity: 0.8;
         }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 12px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🚀 Welcome to Tech Quiz Challenge 2025 🚀</h1>
-        <h2 class="highlight">Win ₹1 Lakh & Unlock Premium Tech Courses!</h2>
-        <p>Challenge yourself for 30 days with daily quizzes, climb the leaderboard, and win exciting prizes!</p>
-        <p>Register now and get access to courses on <strong>Java, Python, AI/ML, Web Dev, DevOps</strong> & more.</p>
-        <a href="#" class="btn">Register / Login</a>
+        <div class="card">
+            <h1>🚀 Welcome to Tech Quiz Challenge 2025 🚀</h1>
+            <h2>Win ₹1 Lakh & Unlock Premium Tech Courses!</h2>
+            <p class="highlight">Entry Fee: Just ₹150</p>
+            <p>Challenge yourself for 30 days with daily quizzes, climb the leaderboard, and win exciting prizes!</p>
+            <p>🎓 Free access to exclusive tech courses on <strong>Java, Python, AI/ML, Web Dev, DevOps</strong> & more.</p>
+            <a 
+                class="btn" 
+                href="https://wa.me/917799737306?text=I%20want%20to%20participate%20in%20the%20Tech%20Quiz%20Challenge!"
+                target="_blank"
+            >
+                Register / Login via WhatsApp
+            </a>
+        </div>
     </div>
 
     <footer>
